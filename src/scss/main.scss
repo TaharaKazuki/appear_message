@@ -1,0 +1,40 @@
+html,body {
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #ff7200), color-stop(1.00, #cd0000));;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.myText {
+  position: relative;
+  text-align: center;
+  color: #DCD591;
+  font-size: calc(100vw/20);
+  display: none;
+  span {
+    display: inline-block;
+    min-width: 10px;
+    opacity: 0;
+    transform: scale(10);
+    &.motion{
+      opacity: 1;
+      transform: scale(1);
+      transition: all 1s;
+    }
+  }
+}
+.startBtn {
+  position: absolute;
+  cursor: pointer;
+  font-size: calc(100vw/10);
+  color: #FFFFFF;
+}
+.isHide {
+  display: none;
+}
